@@ -1,22 +1,5 @@
 "use strict";
 
-/*
-Directions and requirements
-• Develop an index page for a fictional company* that includes at least one map. Ensure the
-page appears professional and utilizes the map effectively. Do not use 'lorem ipsum'.
-* Sign up for a free account on the MapBox website (https://www.mapbox.com/).
-* Generate an access token after creating the account.
-* Refer to the MapBox documentation provided at https://docs.mapbox.com to familiarize
-* yourself with using the MapboxGL library. You can also explore additional examples and
-* resources available through Google or other sources.
-* Implement the functions covered in class to retrieve the user's device location, ensuring the
-* use of callback functions.
-• Utilize the obtained coordinates to center the map on the user's location.
-* Use a marker (mapboxgl.Marker) to display the location.
-* GPS provider, delivery service (Uber Eats, DoorDash), mobility as a service provider (Uber), etc.
-
-*/
-
 import { select,onEvent } from "./utils/general.js";
 import { MAPBOX_ACCESS_TOKEN } from "./config.js";
 
