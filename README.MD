@@ -8,4 +8,4 @@ BoxTracker is a web application that allows users to track the status of their p
 
 ## Demo
 
-Click [here](https://marcelolop.github.io/boxtracker/) to view the demo.
+Click [here](https://marcelolop.github.io/box-tracker/) to view the demo.
