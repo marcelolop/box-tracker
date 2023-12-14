@@ -232,7 +232,7 @@ section.services-container {
     font-size: 32px;
 }
 
-.content .para {
+.content .paragraph {
     line-height: 1.5;
     font-size: 18px;
 }
@@ -381,62 +381,6 @@ section.services-container {
     font-size: 1.5em;
 }
 
-/**FOOTER**/
-
-footer {
-    background-color: #131313;
-    color: #bdbdbd;
-    padding: 2rem 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-}
-
-.footer-section {
-    flex: 1;
-    padding: 0 2rem;
-}
-
-.footer-section h2 {
-    color: var(--app-tertiary-color);
-    font-size: 1.5em;
-    margin-bottom: 1rem;
-}
-
-.footer-section ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section a {
-    color: #bdbdbd;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-        color: var(--app-main-color);
-    }
-
-    &:active {
-        transform: scale(0.95);
-    }
-}
-
-.footer-bottom {
-    text-align: center;
-    padding: 1rem 0;
-    color: #bdbdbd;
-}
 
 .about-us-container {
     display: grid;
@@ -591,4 +535,80 @@ footer {
     &:active {
         transform: scale(0.95);
     }
+}
+
+/**FOOTER**/
+
+footer {
+    background-color: #131313;
+    color: #bdbdbd;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.footer-section h2 {
+    color: var(--app-tertiary-color);
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: var(--app-main-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: var(--app-tertiary-color);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    color: #bdbdbd;
+}
+
+.form label {
+    color: var(--app-tertiary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+   
+
+.contact i {
+    color: var(--app-main-color);
+    margin-right: 1rem;
 }
