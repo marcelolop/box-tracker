@@ -684,6 +684,15 @@ footer {
         height: 7rem;
         font-size: 2.5rem;
     }
+
+    .tracker-text {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .tracker-box{
+        padding: 0 3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -713,5 +722,10 @@ footer {
         width: 20rem;
         height: 6rem;
         font-size: 2rem;
+    }
+
+    .tracker-text {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 }
