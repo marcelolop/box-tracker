@@ -40,6 +40,12 @@ header {
     gap: 1rem;
 }
 
+.logo {
+    width: 5rem;
+
+    line-height: 1.5;
+}
+
 .header-title-links h1 {
     font-size: 4rem;
 }
@@ -210,11 +216,11 @@ section.services-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 320px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 32px;
+    width: 32rem;
+    box-shadow: 0 1rem 2rem #00000033;
+    padding: 3.2rem;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -222,31 +228,32 @@ section.services-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 2rem;
     color: #e8e8e8;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .content .heading {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 .content .paragraph {
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .content .btn {
     color: #e8e8e8;
     text-decoration: none;
-    padding: 10px;
+    padding: 1rem;
     font-weight: 600;
+    font-size: 2rem;
     border: none;
     cursor: pointer;
-    background: linear-gradient(-45deg, var(--app-main-color) 0%, var(--app-card-color-effect) 100%);
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: var(--app-main-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .card::before {
@@ -255,7 +262,7 @@ section.services-container {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 5px;
+    height: 0.5rem;
     background: linear-gradient(-45deg, var(--app-main-color) 0%, var(--app-card-color-effect) 100%);
     z-index: -1;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
@@ -267,24 +274,25 @@ section.services-container {
 
 .card:hover {
     box-shadow: none;
+
+    .content,
+    .content .heading {
+        color: #fff;
+    }
 }
 
 .card:hover .btn {
     color: #212121;
-    background: #e8e8e8;
 }
 
 .content .btn:hover {
-    outline: 2px solid #e8e8e8;
-    background: transparent;
-    color: #e8e8e8;
+    background-color: var(--app-main-color-hover);
+    color: #212121;
 }
 
 .content .btn:active {
     box-shadow: none;
 }
-
-
 
 /** MAP RULES**/
 #map {
@@ -397,7 +405,7 @@ section.services-container {
 }
 
 .about-us-text p {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--app-tertiary-color)
 }
 
@@ -429,7 +437,7 @@ section.services-container {
 }
 
 .contact-us-text p {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--app-tertiary-color)
 }
 
@@ -499,6 +507,7 @@ section.services-container {
     color: #fff;
     text-align: center;
     font-weight: 700;
+    font-size: 2rem;
     border: 0.1rem solid transparent;
     transition: all 0.2s ease-in-out;
 
@@ -524,6 +533,7 @@ section.services-container {
     color: #fff;
     background: linear-gradient(-45deg, var(--app-main-color) 0%, var(--app-card-color-effect) 100%);
     font-weight: 700;
+    font-size: 2rem;
     border-radius: 5rem;
     transition: all 0.2s ease-in-out;
 
@@ -606,10 +616,102 @@ footer {
     gap: 1rem;
     margin-top: 1rem;
 }
-   
 
 .contact i {
     color: var(--app-main-color);
     margin-right: 1rem;
 }
 
+@media (max-width: 1079px) {
+    .container {
+        width: 100%;
+    }
+
+    .header-title-links h1 {
+        font-size: 3rem;
+    }
+
+    .header-title-links nav ul li a {
+        font-size: 2rem;
+    }
+
+    .login-button {
+        width: 10rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    .hero-banner-container h2 {
+        font-size: 8rem;
+    }
+
+    .hero-banner-container p {
+        font-size: 5rem;
+    }
+
+    .hero-banner-container button {
+        width: 30rem;
+        height: 8rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-title-links h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-title-links nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    .login-button {
+        width: 8rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-banner-container h2 {
+        font-size: 6rem;
+    }
+
+    .hero-banner-container p {
+        font-size: 4rem;
+    }
+
+    .hero-banner-container button {
+        width: 25rem;
+        height: 7rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title-links h1 {
+        font-size: 2rem;
+    }
+
+    .header-title-links nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .login-button {
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    .hero-banner-container h2 {
+        font-size: 4rem;
+    }
+
+    .hero-banner-container p {
+        font-size: 3rem;
+    }
+
+    .hero-banner-container button {
+        width: 20rem;
+        height: 6rem;
+        font-size: 2rem;
+    }
+}
