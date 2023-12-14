@@ -1,5 +1,4 @@
 node_modules/
-/assets/script/config-token.js
 .DS_Store
 dist/
 .env

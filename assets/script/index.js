@@ -1,7 +1,7 @@
 "use strict";
 
 import { select,onEvent } from "./utils/general.js";
-import { MAPBOX_ACCESS_TOKEN } from "./config-token.js";
+const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoibWFyY2Vsb2xvcCIsImEiOiJjbHExOWt3ZHUwN2MxMnByMHJjNmN2cnBkIn0.3erMoirLCVRljyBI1DfCWg';
 
 const DEFAULT_ZOOM = 18;
 const DEFAULT_PITCH = 20;
