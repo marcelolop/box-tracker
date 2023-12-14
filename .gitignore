@@ -1,0 +1,6 @@
+node_modules/
+/assets/script/config.js
+.DS_Store
+dist/
+.env
+*.log

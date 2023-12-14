@@ -1,0 +1,16 @@
+{
+  "name": "boxtracker",
+  "version": "1.0.0",
+  "description": "Welcome to BoxTracker, a fake company that provides package delivery services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "keywords": [ "boxtracker", "package delivery", "HTML", "CSS", "JavaScript" ],
+  "author": "Marcelo Lopes",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
